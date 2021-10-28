@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calc" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6Z5-FL-t90">
+                                <rect key="frame" x="44" y="186" width="808" height="207"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="PHP-WI-9jP">
+                                        <rect key="frame" x="0.0" y="0.0" width="808" height="41.5"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="B6a-jt-fiG">
+                                        <rect key="frame" x="0.0" y="41.5" width="808" height="41.5"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="FoM-35-fqT">
+                                        <rect key="frame" x="0.0" y="83" width="808" height="41"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="h4Y-Tw-aJ3">
+                                        <rect key="frame" x="0.0" y="124" width="808" height="41.5"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="V1I-y7-I6w">
+                                        <rect key="frame" x="0.0" y="165.5" width="808" height="41.5"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="B6a-jt-fiG" firstAttribute="height" secondItem="PHP-WI-9jP" secondAttribute="height" id="2ey-5T-wYz"/>
+                                    <constraint firstItem="h4Y-Tw-aJ3" firstAttribute="height" secondItem="PHP-WI-9jP" secondAttribute="height" id="Kp6-bQ-yR5"/>
+                                    <constraint firstItem="FoM-35-fqT" firstAttribute="height" secondItem="B6a-jt-fiG" secondAttribute="height" id="M2K-DX-NWy"/>
+                                    <constraint firstItem="V1I-y7-I6w" firstAttribute="height" secondItem="PHP-WI-9jP" secondAttribute="height" id="oEu-m8-s32"/>
+                                    <constraint firstItem="h4Y-Tw-aJ3" firstAttribute="height" secondItem="FoM-35-fqT" secondAttribute="height" id="piW-rg-zvg"/>
+                                </constraints>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pCD-rz-psx">
+                                <rect key="frame" x="68" y="116" width="760" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="iAk-2Z-5IY"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Z5-FL-t90" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="16G-yI-0A6"/>
+                            <constraint firstItem="6Z5-FL-t90" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="7YO-po-Poy"/>
+                            <constraint firstItem="6Z5-FL-t90" firstAttribute="top" secondItem="pCD-rz-psx" secondAttribute="bottom" constant="20" id="I6S-Fi-cdD"/>
+                            <constraint firstItem="pCD-rz-psx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="fDT-1U-ZWi"/>
+                            <constraint firstItem="PHP-WI-9jP" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="jOy-DI-5ak"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Z5-FL-t90" secondAttribute="trailing" id="kHw-yf-ACn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pCD-rz-psx" secondAttribute="trailing" constant="24" id="pu2-gi-tty"/>
+                            <constraint firstItem="6Z5-FL-t90" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="uxW-QO-JVs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="calcTextField" destination="pCD-rz-psx" id="NtW-5q-7kF"/>
+                        <outlet property="fifthStackView" destination="V1I-y7-I6w" id="FXu-eT-3d6"/>
+                        <outlet property="fstStackView" destination="PHP-WI-9jP" id="JBc-Q1-wwF"/>
+                        <outlet property="fthStackView" destination="h4Y-Tw-aJ3" id="naR-NA-2oK"/>
+                        <outlet property="mainStackView" destination="6Z5-FL-t90" id="shq-jq-VrV"/>
+                        <outlet property="secStackView" destination="B6a-jt-fiG" id="ei9-yd-rYz"/>
+                        <outlet property="thdStackView" destination="FoM-35-fqT" id="FRS-m5-0Qc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26" y="89"/>
+        </scene>
+    </scenes>
+</document>
